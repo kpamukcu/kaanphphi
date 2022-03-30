@@ -94,5 +94,3 @@
 
 
 <?php require_once('footer.php'); ?>
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.
