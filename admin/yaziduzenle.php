@@ -1,12 +1,10 @@
 <?php
-
 require_once('header.php');
 
 $id = $_GET['id'];
 $sorgu_duzenle = $db->prepare('select * from yazilar where id=?');
 $sorgu_duzenle->execute(array($id));
 $satir_duzenle = $sorgu_duzenle->fetch();
-
 ?>
 
 <!-- Yazı Ekle Section Start -->
