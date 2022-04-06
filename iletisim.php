@@ -19,7 +19,7 @@ $satir_iletisim = $sorgu_iletisim->fetch();
 <!-- İletişim Banner Section End -->
 
 <!-- Info Section Start -->
-<section id="info">
+<section id="info" class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4 text-center">
@@ -41,5 +41,47 @@ $satir_iletisim = $sorgu_iletisim->fetch();
     </div>
 </section>
 <!-- Info Section End -->
+
+<!-- Form Section Start -->
+<section id="iletisimForm" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Formu Doldurun</h2>
+                <form method="post">
+                    <div class="form-group">
+                        <label><small>Adınız Soyadınız</small></label>
+                        <input type="text" name="ad" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label><small>E-Posta Adresiniz</small></label>
+                        <input type="email" name="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label><small>Konu Seçiniz</small></label>
+                        <select name="konu" class="form-control">
+                            <option value="">Seçiniz</option>
+                            <option value="Şikayet">Şikayet</option>
+                            <option value="Öneri">Öneri</option>
+                            <option value="Bilgi Talebi">Bilgi Talebi</option>
+                            <option value="Teknik Destek">Teknik Destek</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><small>Mesajınız</small></label>
+                        <textarea name="mesaj" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-mor w-100">Gönder</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 text-center">
+                <?php echo $satir_iletisim['harita']; ?>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Form Section End -->
 
 <?php require_once('footer.php'); ?>
