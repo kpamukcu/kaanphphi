@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 04 Nis 2022, 18:53:36
+-- Üretim Zamanı: 06 Nis 2022, 18:09:32
 -- Sunucu sürümü: 5.7.11
 -- PHP Sürümü: 5.6.19
 
@@ -161,6 +161,24 @@ INSERT INTO `yazilar` (`id`, `baslik`, `icerik`, `meta`, `foto`, `fotoalt`, `kat
 (6, 'Blog Yazısı 6', '<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione facere soluta reprehenderit quam ullam ducimus. Sequi fuga nostrum commodi iure corrupti, officia cum pariatur libero voluptatem molestias enim minus mollitia laudantium earum autem ducimus eum accusantium eaque inventore quisquam aspernatur asperiores. Magni dolor expedita nesciunt recusandae fugit. Quia, dolor eveniet doloribus molestias cupiditate expedita debitis ipsam dignissimos officia ut temporibus soluta ullam nulla neque facere placeat dolorem tenetur qui est harum. Earum exercitationem laudantium vitae placeat aspernatur alias eaque autem adipisci deleniti. Quasi explicabo rerum eligendi. Impedit magni obcaecati quibusdam culpa ipsum quis dolorem harum illum. Modi, nesciunt? Ipsa!</p>\r\n\r\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione facere soluta reprehenderit quam ullam ducimus. Sequi fuga nostrum commodi iure corrupti, officia cum pariatur libero voluptatem molestias enim minus mollitia laudantium earum autem ducimus eum accusantium eaque inventore quisquam aspernatur asperiores. Magni dolor expedita nesciunt recusandae fugit. Quia, dolor eveniet doloribus molestias cupiditate expedita debitis ipsam dignissimos officia ut temporibus soluta ullam nulla neque facere placeat dolorem tenetur qui est harum. Earum exercitationem laudantium vitae placeat aspernatur alias eaque autem adipisci deleniti. Quasi explicabo rerum eligendi. Impedit magni obcaecati quibusdam culpa ipsum quis dolorem harum illum. Modi, nesciunt? Ipsa!</p>\r\n\r\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione facere soluta reprehenderit quam ullam ducimus. Sequi fuga nostrum commodi iure corrupti, officia cum pariatur libero voluptatem molestias enim minus mollitia laudantium earum autem ducimus eum accusantium eaque inventore quisquam aspernatur asperiores. Magni dolor expedita nesciunt recusandae fugit. Quia, dolor eveniet doloribus molestias cupiditate expedita debitis ipsam dignissimos officia ut temporibus soluta ullam nulla neque facere placeat dolorem tenetur qui est harum. Earum exercitationem laudantium vitae placeat aspernatur alias eaque autem adipisci deleniti. Quasi explicabo rerum eligendi. Impedit magni obcaecati quibusdam culpa ipsum quis dolorem harum illum. Modi, nesciunt? Ipsa!</p>\r\n', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', '../img/hakkimda-banner-1500x600px.jpg', 'Blog Yazısı 6', 'Html', '2022-03-28', 'Yayınlandı'),
 (7, 'Sosyal Medyada Takipçi Kazanma', '<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione facere soluta reprehenderit quam ullam ducimus. Sequi fuga nostrum commodi iure corrupti, officia cum pariatur libero voluptatem molestias enim minus mollitia laudantium earum autem ducimus eum accusantium eaque inventore quisquam aspernatur asperiores. Magni dolor expedita nesciunt recusandae fugit. Quia, dolor eveniet doloribus molestias cupiditate expedita debitis ipsam dignissimos officia ut temporibus soluta ullam nulla neque facere placeat dolorem tenetur qui est harum. Earum exercitationem laudantium vitae placeat aspernatur alias eaque autem adipisci deleniti. Quasi explicabo rerum eligendi. Impedit magni obcaecati quibusdam culpa ipsum quis dolorem harum illum. Modi, nesciunt? Ipsa!</p>\r\n\r\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione facere soluta reprehenderit quam ullam ducimus. Sequi fuga nostrum commodi iure corrupti, officia cum pariatur libero voluptatem molestias enim minus mollitia laudantium earum autem ducimus eum accusantium eaque inventore quisquam aspernatur asperiores. Magni dolor expedita nesciunt recusandae fugit. Quia, dolor eveniet doloribus molestias cupiditate expedita debitis ipsam dignissimos officia ut temporibus soluta ullam nulla neque facere placeat dolorem tenetur qui est harum. Earum exercitationem laudantium vitae placeat aspernatur alias eaque autem adipisci deleniti. Quasi explicabo rerum eligendi. Impedit magni obcaecati quibusdam culpa ipsum quis dolorem harum illum. Modi, nesciunt? Ipsa!</p>\r\n\r\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione facere soluta reprehenderit quam ullam ducimus. Sequi fuga nostrum commodi iure corrupti, officia cum pariatur libero voluptatem molestias enim minus mollitia laudantium earum autem ducimus eum accusantium eaque inventore quisquam aspernatur asperiores. Magni dolor expedita nesciunt recusandae fugit. Quia, dolor eveniet doloribus molestias cupiditate expedita debitis ipsam dignissimos officia ut temporibus soluta ullam nulla neque facere placeat dolorem tenetur qui est harum. Earum exercitationem laudantium vitae placeat aspernatur alias eaque autem adipisci deleniti. Quasi explicabo rerum eligendi. Impedit magni obcaecati quibusdam culpa ipsum quis dolorem harum illum. Modi, nesciunt? Ipsa!</p>\r\n', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', '../img/aaaa3.webp', 'Sosyal Medyada Takipçi Kazanma', 'Dijital Pazarlama', '2022-03-06', 'Yayınlandı');
 
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `yazilara`
+--
+
+CREATE TABLE `yazilara` (
+  `id` int(11) NOT NULL,
+  `baslik` varchar(100) NOT NULL,
+  `icerik` text NOT NULL,
+  `meta` varchar(160) NOT NULL,
+  `foto` varchar(150) NOT NULL,
+  `fotoalt` varchar(100) NOT NULL,
+  `kategori` varchar(25) NOT NULL,
+  `tarih` varchar(11) NOT NULL,
+  `durum` varchar(15) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 --
 -- Dökümü yapılmış tablolar için indeksler
 --
@@ -196,6 +214,12 @@ ALTER TABLE `yazilar`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Tablo için indeksler `yazilara`
+--
+ALTER TABLE `yazilara`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
 --
 
@@ -223,6 +247,11 @@ ALTER TABLE `sayfalar`
 -- Tablo için AUTO_INCREMENT değeri `yazilar`
 --
 ALTER TABLE `yazilar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- Tablo için AUTO_INCREMENT değeri `yazilara`
+--
+ALTER TABLE `yazilara`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
