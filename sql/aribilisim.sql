@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 06 Nis 2022, 18:09:32
+-- Üretim Zamanı: 06 Nis 2022, 18:38:03
 -- Sunucu sürümü: 5.7.11
 -- PHP Sürümü: 5.6.19
 
@@ -51,7 +51,7 @@ CREATE TABLE `ayarlar` (
 --
 
 INSERT INTO `ayarlar` (`id`, `adres`, `telefon`, `email`, `harita`, `tanitim`, `logo`, `blogbanner`, `iletisimbanner`, `facebook`, `instagram`, `twitter`, `whatsapp`, `analitik`, `konsol`, `piksel`, `copy`) VALUES
-(1, 'Lorem Ipsum Dolor Sit Amet', '05555555555', 'kaan@kaan.com', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504900450736!2d29.021533914711632!3d40.9891335285528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab8679bfb3d31%3A0x7d75715e081dfa5c!2sAr%C4%B1%20Bilgi%20Bili%C5%9Fim%20Teknolojileri%20Akademisi%20(Kad%C4%B1k%C3%B6y%20%C5%9Eube)!5e0!3m2!1str!2str!4v1649097246432!5m2!1str!2str" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra egestas leo non eleifend. ', '../img/logo.webp', '../img/blog-banner.jpg', '../img/iletisim-banner.jpeg', 'https://www.facebook.com', 'https://www.instagram.com', 'https://www.twitter.com', 'https://wa.me/05555555555', 'wefwewdcwdcwfewverwfv', 'verveveververververververver', 'verververververveververververver', 'Her hakkı Saklıdır &copy; 2022. Arı Bilişim');
+(1, 'Lorem Ipsum Dolor Sit Amet', '05555555555', 'kaan@kaan.com', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504900450736!2d29.021533914711632!3d40.9891335285528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab8679bfb3d31%3A0x7d75715e081dfa5c!2sAr%C4%B1%20Bilgi%20Bili%C5%9Fim%20Teknolojileri%20Akademisi%20(Kad%C4%B1k%C3%B6y%20%C5%9Eube)!5e0!3m2!1str!2str!4v1649097246432!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra egestas leo non eleifend. ', '../img/logo.webp', '../img/blog-banner.jpg', '../img/iletisim-banner.jpeg', 'https://www.facebook.com', 'https://www.instagram.com', 'https://www.twitter.com', 'https://wa.me/05555555555', 'wefwewdcwdcwfewverwfv', 'verveveververververververver', 'verververververveververververver', 'Her hakkı Saklıdır &copy; 2022. Arı Bilişim');
 
 -- --------------------------------------------------------
 
