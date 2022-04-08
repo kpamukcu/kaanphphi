@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 06 Nis 2022, 18:38:03
+-- Üretim Zamanı: 08 Nis 2022, 18:38:17
 -- Sunucu sürümü: 5.7.11
 -- PHP Sürümü: 5.6.19
 
@@ -78,6 +78,30 @@ INSERT INTO `kategoriler` (`id`, `kategori`, `katturu`, `ustkat`, `meta`) VALUES
 (5, 'Html', 'Alt Kategori', 'Web Tasarım', 'Html, Bir Web Sitesinin Temel Kod Yapısıdır'),
 (7, 'Css', 'Alt Kategori', 'Web Tasarım', 'Web Sitelerinin stillendirilmesi için kullanılan yapı'),
 (8, 'Reackt', 'Ana Kategori', '-', 'Javascript Kütüphanesi');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `mesajlar`
+--
+
+CREATE TABLE `mesajlar` (
+  `id` int(11) NOT NULL,
+  `ad` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `konu` varchar(13) NOT NULL,
+  `mesaj` text NOT NULL,
+  `durum` varchar(8) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `mesajlar`
+--
+
+INSERT INTO `mesajlar` (`id`, `ad`, `email`, `konu`, `mesaj`, `durum`) VALUES
+(1, 'Hayko Cepkin', 'hayko@hayko.com', 'Şikayet', 'Sevgili Kaan, sana o kadar para ödedim hala web sitemi yapmadın.', 'Okunmadı'),
+(2, 'Müzeyyen Senar', 'muzo@muzo.com', 'Teknik Destek', 'Kaancım, siteye mesajlar mail olarak bana gelmiyor. Bi zahmet kontrol eder misin?', 'Okundu'),
+(4, 'asfdasdfasd', 'kaan@kaan.com', 'Öneri', 'asdasdasdasdasda', 'Okunmadı');
 
 -- --------------------------------------------------------
 
@@ -196,6 +220,12 @@ ALTER TABLE `kategoriler`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Tablo için indeksler `mesajlar`
+--
+ALTER TABLE `mesajlar`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Tablo için indeksler `ornek`
 --
 ALTER TABLE `ornek`
@@ -233,6 +263,11 @@ ALTER TABLE `ayarlar`
 --
 ALTER TABLE `kategoriler`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- Tablo için AUTO_INCREMENT değeri `mesajlar`
+--
+ALTER TABLE `mesajlar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Tablo için AUTO_INCREMENT değeri `ornek`
 --
