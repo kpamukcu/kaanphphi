@@ -10,10 +10,9 @@
     text-decoration: none;
 }
 
-
-/* #adminContent .col-md-2 {
-    height: 100vh;
-} */
+#adminContent .col-md-2 {
+    min-height: 100vh;
+}
 
 #footer {
     background-color: #2d2b3a;
@@ -50,4 +49,13 @@
 .btn-mor {
     background-color: #6c55f9;
     color: #fff;
+}
+
+.smallYazi p {
+    line-height: 16px !important;
+}
+
+.sosmed a {
+    color: #393939 !important;
+    font-size: 24px !important;
 }
