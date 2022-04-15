@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 13 Nis 2022, 18:44:54
+-- Üretim Zamanı: 15 Nis 2022, 18:32:16
 -- Sunucu sürümü: 5.7.36
 -- PHP Sürümü: 7.4.26
 
@@ -234,15 +234,17 @@ CREATE TABLE IF NOT EXISTS `yorumlar` (
   `baslik` varchar(150) NOT NULL,
   `durum` varchar(15) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Tablo döküm verisi `yorumlar`
 --
 
 INSERT INTO `yorumlar` (`id`, `adiniz`, `soyadiniz`, `email`, `yorum`, `baslik`, `durum`) VALUES
-(1, 'Hayko', 'Cepkin', 'hayko@gmail.com', 'Ne kadar da güzel bir yazı olmuş. Eline sağlık !!!!!!', 'Sosyal Medyada Takipçi Kazanma', 'onaylanmadı'),
-(2, 'Bülent', 'Ersoy', 'bulo@gmail.com', 'Fevkaladenin Fevkinde', 'Seonun Web Siteleri için Önemi', 'onaylanmadı');
+(1, 'Hayko', 'Cepkin', 'hayko@gmail.com', 'Ne kadar da güzel bir yazı olmuş. Eline sağlık !!!!!!', 'Sosyal Medyada Takipçi Kazanma', 'onaylandı'),
+(2, 'Bülent', 'Ersoy', 'bulo@gmail.com', 'Fevkaladenin Fevkinde', 'Seonun Web Siteleri için Önemi', 'onaylandı'),
+(4, 'Mahmut', 'Tuncer', 'mamo@gmail.com', 'Hadi Halay Çekelim :)', 'Blog Yazısı 6', 'onaylandı'),
+(5, 'Ebru', 'Polat', 'ebus@gmail.com', 'Aman Ne Kadar Da Güzel', 'Blog Yazısı 6', 'onaylandı');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

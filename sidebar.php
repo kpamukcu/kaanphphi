@@ -28,7 +28,7 @@
                     if ($sorgu_katlist->rowCount()) {
                         foreach ($sorgu_katlist as $satir_katlist) {
                     ?>
-                            <a href="kategorippage.php?kategori=<?php echo $satir_katlist['kategori']; ?>" class="text-dark text-decoration-none"><?php echo $satir_katlist['kategori']; ?></a><br>
+                            <a href="kategoripage.php?kategori=<?php echo $satir_katlist['kategori']; ?>" class="text-dark text-decoration-none"><?php echo $satir_katlist['kategori']; ?></a><br>
                     <?php
                         }
                     }
