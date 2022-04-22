@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 20 Nis 2022, 18:40:02
+-- Üretim Zamanı: 22 Nis 2022, 18:20:10
 -- Sunucu sürümü: 5.7.36
 -- PHP Sürümü: 7.4.26
 
@@ -71,14 +71,36 @@ CREATE TABLE IF NOT EXISTS `hakkimdabanner` (
   `tekrar` varchar(50) NOT NULL,
   `size` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Tablo döküm verisi `hakkimdabanner`
 --
 
 INSERT INTO `hakkimdabanner` (`id`, `foto`, `baslik`, `konum`, `tekrar`, `size`) VALUES
-(2, '../img/hakkimda-banner-1500x600px.jpg', 'Hakkımda', 'background-position:center center;', 'background-repeat:no-repeat;', 'background-size:cover;');
+(4, '../img/ari-bilisim-web-portfolyo-1500x600px.jpg', 'Beni Tanıyın', 'background-position:center center;', 'background-repeat:no-repeat;', 'background-size:cover;');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `hakkimdaicerik`
+--
+
+DROP TABLE IF EXISTS `hakkimdaicerik`;
+CREATE TABLE IF NOT EXISTS `hakkimdaicerik` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` varchar(150) NOT NULL,
+  `altbaslik` varchar(100) NOT NULL,
+  `icerik` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `hakkimdaicerik`
+--
+
+INSERT INTO `hakkimdaicerik` (`id`, `foto`, `altbaslik`, `icerik`) VALUES
+(1, '../img/hakkimda.png', 'Hakkımda', '<p>Lorpossimus recusandae, quo sint fugit corrupti neque quaerat dicta quis facere vel earum doloribus. Nulla aspernatur quae accusamus id maxime minima iure officia odit deserunt repellendus perspiciatis unde ea, assumenda libero qui quo. Quo exercitationem distinctio quisquam reiciendis corporis sequi in accusamus id ex, corrupti cumque tenetur voluptatem magni molestiae. Earum ex totam explicabo illum perspiciatis provident nulla reprehenderit deserunt laborum neque. Ratione consectetur fuga facere tempore. Expedita, praesentium sit officia quas autem, quae magnam eveniet animi facilis quo placeat libero omnis perspiciatis aut corporis non sequi aliquam asperiores! Voluptate, recusandae quod error provident quos explicabo doloribus nihil non, voluptas magni quidem nostrum facere quo et itaque iste. Sed.</p>\n');
 
 -- --------------------------------------------------------
 
