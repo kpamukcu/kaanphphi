@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 22 Nis 2022, 18:20:10
+-- Üretim Zamanı: 25 Nis 2022, 18:37:06
 -- Sunucu sürümü: 5.7.36
 -- PHP Sürümü: 7.4.26
 
@@ -59,6 +59,28 @@ INSERT INTO `ayarlar` (`id`, `adres`, `telefon`, `email`, `harita`, `tanitim`, `
 -- --------------------------------------------------------
 
 --
+-- Tablo için tablo yapısı `cta`
+--
+
+DROP TABLE IF EXISTS `cta`;
+CREATE TABLE IF NOT EXISTS `cta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` varchar(100) NOT NULL,
+  `slogan` varchar(100) NOT NULL,
+  `tel` varchar(14) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `cta`
+--
+
+INSERT INTO `cta` (`id`, `foto`, `slogan`, `tel`) VALUES
+(1, '../img/hakkimda-banner-1500x600px.jpg', 'Kaliteli Hizmet için Bizi Hemen Arayın', '05555555555');
+
+-- --------------------------------------------------------
+
+--
 -- Tablo için tablo yapısı `hakkimdabanner`
 --
 
@@ -92,15 +114,21 @@ CREATE TABLE IF NOT EXISTS `hakkimdaicerik` (
   `foto` varchar(150) NOT NULL,
   `altbaslik` varchar(100) NOT NULL,
   `icerik` text NOT NULL,
+  `altbaslik2` varchar(50) NOT NULL,
+  `nit1` varchar(3) NOT NULL,
+  `nit2` varchar(3) NOT NULL,
+  `nit3` varchar(3) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Tablo döküm verisi `hakkimdaicerik`
 --
 
-INSERT INTO `hakkimdaicerik` (`id`, `foto`, `altbaslik`, `icerik`) VALUES
-(1, '../img/hakkimda.png', 'Hakkımda', '<p>Lorpossimus recusandae, quo sint fugit corrupti neque quaerat dicta quis facere vel earum doloribus. Nulla aspernatur quae accusamus id maxime minima iure officia odit deserunt repellendus perspiciatis unde ea, assumenda libero qui quo. Quo exercitationem distinctio quisquam reiciendis corporis sequi in accusamus id ex, corrupti cumque tenetur voluptatem magni molestiae. Earum ex totam explicabo illum perspiciatis provident nulla reprehenderit deserunt laborum neque. Ratione consectetur fuga facere tempore. Expedita, praesentium sit officia quas autem, quae magnam eveniet animi facilis quo placeat libero omnis perspiciatis aut corporis non sequi aliquam asperiores! Voluptate, recusandae quod error provident quos explicabo doloribus nihil non, voluptas magni quidem nostrum facere quo et itaque iste. Sed.</p>\n');
+INSERT INTO `hakkimdaicerik` (`id`, `foto`, `altbaslik`, `icerik`, `altbaslik2`, `nit1`, `nit2`, `nit3`) VALUES
+(1, '../img/hakkimda.png', 'Hakkımda', '<p>Lorpossimus recusandae, quo sint fugit corrupti neque quaerat dicta quis facere vel earum doloribus. Nulla aspernatur quae accusamus id maxime minima iure officia odit deserunt repellendus perspiciatis unde ea, assumenda libero qui quo. Quo exercitationem distinctio quisquam reiciendis corporis sequi in accusamus id ex, corrupti cumque tenetur voluptatem magni molestiae. Earum ex totam explicabo illum perspiciatis provident nulla reprehenderit deserunt laborum neque. Ratione consectetur fuga facere tempore. Expedita, praesentium sit officia quas autem, quae magnam eveniet animi facilis quo placeat libero omnis perspiciatis aut corporis non sequi aliquam asperiores! Voluptate, recusandae quod error provident quos explicabo doloribus nihil non, voluptas magni quidem nostrum facere quo et itaque iste. Sed.</p>\n', '', '', '', ''),
+(2, '../img/ari-bilisim-web-portfolyo-1500x600px.jpg', 'Hakkımda', '<p>Lorpossimus recusandae, quo sint fugit corrupti neque quaerat dicta quis facere vel earum doloribus. Nulla aspernatur quae accusamus id maxime minima iure officia odit deserunt repellendus perspiciatis unde ea, assumenda libero qui quo. Quo exercitationem distinctio quisquam reiciendis corporis sequi in accusamus id ex, corrupti cumque tenetur voluptatem magni molestiae. Earum ex totam explicabo illum perspiciatis provident nulla reprehenderit deserunt laborum neque. Ratione consectetur fuga facere tempore. Expedita, praesentium sit officia quas autem, quae magnam eveniet animi facilis quo placeat libero omnis perspiciatis aut corporis non sequi aliquam asperiores! Voluptate, recusandae quod error provident quos explicabo doloribus nihil non, voluptas magni quidem nostrum facere quo et itaque iste. Sed.</p>\r\n', 'Yetkinliklerim', '85', '92', '89'),
+(3, '../img/hakkimda.png', 'Hakkımda', '<p>Lorpossimus recusandae, quo sint fugit corrupti neque quaerat dicta quis facere vel earum doloribus. Nulla aspernatur quae accusamus id maxime minima iure officia odit deserunt repellendus perspiciatis unde ea, assumenda libero qui quo. Quo exercitationem distinctio quisquam reiciendis corporis sequi in accusamus id ex, corrupti cumque tenetur voluptatem magni molestiae. Earum ex totam explicabo illum perspiciatis provident nulla reprehenderit deserunt laborum neque. Ratione consectetur fuga facere tempore. Expedita, praesentium sit officia quas autem, quae magnam eveniet animi facilis quo placeat libero omnis perspiciatis aut corporis non sequi aliquam asperiores! Voluptate, recusandae quod error provident quos explicabo doloribus nihil non, voluptas magni quidem nostrum facere quo et itaque iste. Sed.</p>\r\n', 'Yetkinliklerim', '82', '89', '92');
 
 -- --------------------------------------------------------
 

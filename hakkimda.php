@@ -23,7 +23,7 @@ $satir_icerik = $sorgu_icerik->fetch();
 <!-- hakkımda Banner Section End -->
 
 <!-- içerik Section Start -->
-<section id="icerik">
+<section id="icerik" class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-6 my-auto">
@@ -38,10 +38,26 @@ $satir_icerik = $sorgu_icerik->fetch();
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h2>Alt Başlık 3</h2>
-                        <p>
-                            Progress Barlar Eklenecek
-                        </p>
+                        <label>Html</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: <?php echo $satir_icerik['nit1']; ?>%" aria-valuenow="<?php echo $satir_icerik['nit1']; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label>Css</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: <?php echo $satir_icerik['nit2']; ?>%" aria-valuenow="<?php echo $satir_icerik['nit2']; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label>Php</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: <?php echo $satir_icerik['nit3']; ?>%" aria-valuenow="<?php echo $satir_icerik['nit3']; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
             </div>
