@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 27 Nis 2022, 18:26:46
+-- Üretim Zamanı: 29 Nis 2022, 18:32:05
 -- Sunucu sürümü: 5.7.36
 -- PHP Sürümü: 7.4.26
 
@@ -233,6 +233,84 @@ INSERT INTO `ornek` (`id`, `ad`, `yas`, `il`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Tablo için tablo yapısı `paket1`
+--
+
+DROP TABLE IF EXISTS `paket1`;
+CREATE TABLE IF NOT EXISTS `paket1` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik1` varchar(50) NOT NULL,
+  `fiyat1` varchar(5) NOT NULL,
+  `ozellik1a` varchar(50) NOT NULL,
+  `ozellik1b` varchar(50) NOT NULL,
+  `ozellik1c` varchar(50) NOT NULL,
+  `ozellik1d` varchar(50) NOT NULL,
+  `ozellik1e` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `paket1`
+--
+
+INSERT INTO `paket1` (`id`, `baslik1`, `fiyat1`, `ozellik1a`, `ozellik1b`, `ozellik1c`, `ozellik1d`, `ozellik1e`) VALUES
+(2, 'Temel Paket', '4500', 'Temel 1', 'Temel 2', 'Temel 3', 'Temel 4', 'Temel 5');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `paket2`
+--
+
+DROP TABLE IF EXISTS `paket2`;
+CREATE TABLE IF NOT EXISTS `paket2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik2` varchar(50) NOT NULL,
+  `fiyat2` varchar(5) NOT NULL,
+  `ozellik2a` varchar(50) NOT NULL,
+  `ozellik2b` varchar(50) NOT NULL,
+  `ozellik2c` varchar(50) NOT NULL,
+  `ozellik2d` varchar(50) NOT NULL,
+  `ozellik2e` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `paket2`
+--
+
+INSERT INTO `paket2` (`id`, `baslik2`, `fiyat2`, `ozellik2a`, `ozellik2b`, `ozellik2c`, `ozellik2d`, `ozellik2e`) VALUES
+(1, 'Moderatör Paket', '6500', 'Moderatör 1', 'Moderatör 2', 'Moderatör 3', 'Moderatör 4', 'Moderatör 5');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `paket3`
+--
+
+DROP TABLE IF EXISTS `paket3`;
+CREATE TABLE IF NOT EXISTS `paket3` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik3` varchar(50) NOT NULL,
+  `fiyat3` varchar(5) NOT NULL,
+  `ozellik3a` varchar(50) NOT NULL,
+  `ozellik3b` varchar(50) NOT NULL,
+  `ozellik3c` varchar(50) NOT NULL,
+  `ozellik3d` varchar(50) NOT NULL,
+  `ozellik3e` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `paket3`
+--
+
+INSERT INTO `paket3` (`id`, `baslik3`, `fiyat3`, `ozellik3a`, `ozellik3b`, `ozellik3c`, `ozellik3d`, `ozellik3e`) VALUES
+(1, 'Pro Paket', '7500', 'Pro 1', 'Pro 2', 'Pro 3', 'Pro 4', 'Pro 5');
+
+-- --------------------------------------------------------
+
+--
 -- Tablo için tablo yapısı `sayfalar`
 --
 
@@ -249,7 +327,7 @@ CREATE TABLE IF NOT EXISTS `sayfalar` (
   `sayfaturu` varchar(10) NOT NULL,
   `tarih` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Tablo döküm verisi `sayfalar`
@@ -259,7 +337,7 @@ INSERT INTO `sayfalar` (`id`, `baslik`, `icerik`, `meta`, `foto`, `fotoalt`, `se
 (1, 'Hakkımda', '<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, eius quisquam assumenda, atque exercitationem optio in magni error, alias illum tempore reprehenderit cum a dignissimos praesentium quae veniam. Libero soluta iure similique, explicabo inventore porro voluptatum impedit consectetur, assumenda ab eaque nam aperiam id nostrum ipsum animi pariatur, beatae reprehenderit repellat sequi laudantium recusandae. Perferendis nesciunt cumque error, cum hic tempora repellat? Iusto dolor recusandae, molestias magni ex qui quae tempora atque deserunt.</p>\r\n\r\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, eius quisquam assumenda, atque exercitationem optio in magni error, alias illum tempore reprehenderit cum a dignissimos praesentium quae veniam. Libero soluta iure similique, explicabo inventore porro voluptatum impedit consectetur, assumenda ab eaque nam aperiam id nostrum ipsum animi pariatur, beatae reprehenderit repellat sequi laudantium recusandae. Perferendis nesciunt cumque error, cum hic tempora repellat? Iusto dolor recusandae, molestias magni ex qui quae tempora atque deserunt.</p>\r\n\r\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, eius quisquam assumenda, atque exercitationem optio in magni error, alias illum tempore reprehenderit cum a dignissimos praesentium quae veniam. Libero soluta iure similique, explicabo inventore porro voluptatum impedit consectetur, assumenda ab eaque nam aperiam id nostrum ipsum animi pariatur, beatae reprehenderit repellat sequi laudantium recusandae. Perferendis nesciunt cumque error, cum hic tempora repellat? Iusto dolor recusandae, molestias magni ex qui quae tempora atque deserunt.</p>\r\n\r\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, eius quisquam assumenda, atque exercitationem optio in magni error, alias illum tempore reprehenderit cum a dignissimos praesentium quae veniam. Libero soluta iure similique, explicabo inventore porro voluptatum impedit consectetur, assumenda ab eaque nam aperiam id nostrum ipsum animi pariatur, beatae reprehenderit repellat sequi laudantium recusandae. Perferendis nesciunt cumque error, cum hic tempora repellat? Iusto dolor recusandae, molestias magni ex qui quae tempora atque deserunt.</p>\r\n\r\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, eius quisquam assumenda, atque exercitationem optio in magni error, alias illum tempore reprehenderit cum a dignissimos praesentium quae veniam. Libero soluta iure similique, explicabo inventore porro voluptatum impedit consectetur, assumenda ab eaque nam aperiam id nostrum ipsum animi pariatur, beatae reprehenderit repellat sequi laudantium recusandae. Perferendis nesciunt cumque error, cum hic tempora repellat? Iusto dolor recusandae, molestias magni ex qui quae tempora atque deserunt.</p>\r\n', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', '../img/hakkimda-banner-1500x600px.jpg', 'Hakkımda', 'Hakkımda | Arı Bilişim', 'Yayınlandı', 'Üst Sayfa', '2022-03-30'),
 (2, 'Web Tasarım Hizmeti', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', '../img/web-tasarim-hizmeti-500x334px.jpg', 'Web Tasarım Hizmeti', 'Web Tasarım Hizmeti | Arı Bilişim', 'Yayınlandı', 'Alt Sayfa', '2022-03-30'),
 (3, 'Grafik Tasarım Hizmeti', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', '../img/grafik-tasarim-hizmeti-330x150px.jpg', 'Grafik Tasarım Hizmeti', 'Grafik Tasarım Hizmeti | Arı Bilişim', 'Yayınlandı', 'Alt Sayfa', '2022-03-30'),
-(4, 'Dijital Pazarlama Hizmeti', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', '../img/dijital-pazarlama-banner-1500x600px.jpg', 'Dijital Pazarlama Hizmeti', 'Dijital Pazarlama Hizmeti', 'Yayınlandı', 'Alt Sayfa', '2022-03-30');
+(8, 'Dijital Pazarlama Hizmeti', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n\r\n<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore neque mollitia quod sed. Deleniti cupiditate delectus sequi, qui, repellendus nobis tempore ullam optio magni eligendi ratione voluptatibus, sint illum possimus temporibus nesciunt dicta iusto voluptate! Maxime excepturi aperiam, officiis illo sit sequi fugit. Laborum, blanditiis? Reiciendis sequi earum obcaecati consequatur quam officia reprehenderit nihil quas soluta. Id quam cupiditate nisi nostrum aliquid consequuntur incidunt illum, fugit doloremque culpa ullam atque quo dolores cum libero expedita.</p>\r\n', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', '../img/dijital-pazarlama-hizmeti-330x150px.jpg', 'Dijital Pazarlama Hizmeti', 'Dijital Pazarlama Hizmeti', 'Yayınlandı', 'Alt Sayfa', '2022-03-30');
 
 -- --------------------------------------------------------
 
