@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 09 May 2022, 18:48:47
+-- Üretim Zamanı: 11 May 2022, 18:35:00
 -- Sunucu sürümü: 5.7.36
 -- PHP Sürümü: 7.4.26
 
@@ -180,6 +180,30 @@ INSERT INTO `kategoriler` (`id`, `kategori`, `katturu`, `ustkat`, `meta`) VALUES
 (5, 'Html', 'Alt Kategori', 'Web Tasarım', 'Html, Bir Web Sitesinin Temel Kod Yapısıdır'),
 (7, 'Css', 'Alt Kategori', 'Web Tasarım', 'Web Sitelerinin stillendirilmesi için kullanılan yapı'),
 (8, 'Reackt', 'Ana Kategori', '-', 'Javascript Kütüphanesi');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `maincta`
+--
+
+DROP TABLE IF EXISTS `maincta`;
+CREATE TABLE IF NOT EXISTS `maincta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` varchar(100) NOT NULL,
+  `kisayazi` varchar(250) NOT NULL,
+  `background` varchar(7) NOT NULL,
+  `font` varchar(3) NOT NULL,
+  `font2` varchar(3) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `maincta`
+--
+
+INSERT INTO `maincta` (`id`, `baslik`, `kisayazi`, `background`, `font`, `font2`) VALUES
+(2, 'Hızlı ve Kaliteli Hizmet için Hemen Arayın', 'Ari Bilişim dijital hizmetler olarak, ihtiyaçlarınıza en uygun dijital çözümler sağlıyoruz.', '#6c55f9', '24', '14');
 
 -- --------------------------------------------------------
 
