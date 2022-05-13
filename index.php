@@ -103,7 +103,7 @@ $satir_hakkimda = $sorgu_hakkimda->fetch();
 <!-- Hakkımda Section End -->
 
 <!-- özellikler Section start -->
-<div id="anaOzellikler">
+<div id="anaOzellikler" class="py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -112,11 +112,23 @@ $satir_hakkimda = $sorgu_hakkimda->fetch();
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                ikon gelecek <br>
-                başlık gelecek <br>
-                kısa açıklama
-            </div>
+            <?php
+
+            $sorgu_ozellik = $db->prepare('select * from ozellikler order by ozbaslik asc');
+            $sorgu_ozellik->execute();
+
+            if ($sorgu_ozellik->rowCount()) {
+                foreach ($sorgu_ozellik as $satir_ozellik) {
+            ?>
+                    <div class="col-md-4 mt-5 text-center">
+                        <div class="ikonStil text-center mx-auto"><?php echo $satir_ozellik['ikon']; ?></div>
+                        <?php echo $satir_ozellik['ozbaslik']; ?><br>
+                        <?php echo $satir_ozellik['ozaciklama']; ?>
+                    </div>
+            <?php
+                }
+            }
+            ?>
         </div>
     </div>
 </div>
@@ -157,7 +169,7 @@ $satir_hakkimda = $sorgu_hakkimda->fetch();
                 $sorgu_analiz->execute(array($web, $email, $puan));
 
                 if ($sorgu_analiz->rowCount()) {
-                    echo '<div class="text-white text-center">'.$web.' adresi için ücretsiz Seo Analizi talebiniz alınmıştır.</div>';
+                    echo '<div class="text-white text-center">' . $web . ' adresi için ücretsiz Seo Analizi talebiniz alınmıştır.</div>';
                 } else {
                     echo 'Hata Oluştu. Lütfen Tekrar Deneyin.';
                 }
@@ -263,9 +275,9 @@ $satir_hakkimda = $sorgu_hakkimda->fetch();
 
 <!-- Hizmet Tanıtım Section Start -->
 <?php
-$sorgu_ctamain = $db -> prepare('select * from maincta order by id desc limit 1');
-$sorgu_ctamain -> execute();
-$satir_ctamain = $sorgu_ctamain -> fetch();
+$sorgu_ctamain = $db->prepare('select * from maincta order by id desc limit 1');
+$sorgu_ctamain->execute();
+$satir_ctamain = $sorgu_ctamain->fetch();
 ?>
 
 <section id="hizmetTanitim" style="background-color:<?php echo $satir_ctamain['background']; ?> ;" class="py-5">
@@ -273,7 +285,7 @@ $satir_ctamain = $sorgu_ctamain -> fetch();
         <div class="row">
             <div class="col-md-6 text-white">
                 <h2 style="font-size:<?php echo $satir_ctamain['font']; ?>px;"><?php echo $satir_ctamain['baslik']; ?></h2>
-                <p style="font-size:<?php echo $satir_ctamain['font2']; ?>px;" ><?php echo $satir_ctamain['kisayazi']; ?></p>
+                <p style="font-size:<?php echo $satir_ctamain['font2']; ?>px;"><?php echo $satir_ctamain['kisayazi']; ?></p>
             </div>
             <div class="col-md-6 my-auto text-center">
                 <a href="tel:+9055555555555"><button class="btn btn-warning">Hemen Arayın</button></a>

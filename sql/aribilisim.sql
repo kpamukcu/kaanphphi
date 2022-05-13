@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 11 May 2022, 18:35:00
+-- Üretim Zamanı: 13 May 2022, 18:21:49
 -- Sunucu sürümü: 5.7.36
 -- PHP Sürümü: 7.4.26
 
@@ -253,6 +253,55 @@ CREATE TABLE IF NOT EXISTS `ornek` (
 INSERT INTO `ornek` (`id`, `ad`, `yas`, `il`) VALUES
 (6, 'Kaan', 40, 'İstanbul'),
 (8, 'Hayko', 40, 'İstanbul');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `ozellikler`
+--
+
+DROP TABLE IF EXISTS `ozellikler`;
+CREATE TABLE IF NOT EXISTS `ozellikler` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ikon` varchar(50) NOT NULL,
+  `ozbaslik` varchar(100) NOT NULL,
+  `ozaciklama` varchar(150) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `ozellikler`
+--
+
+INSERT INTO `ozellikler` (`id`, `ikon`, `ozbaslik`, `ozaciklama`) VALUES
+(2, '<i class=\"bi bi-apple\"></i>', 'Mobil App Uyumu', 'Mobil cihazlarda sorunsuz çalışan teknoloji'),
+(3, '<i class=\"bi bi-badge-wc-fill\"></i>', 'Hızlı Sonuç', 'sdfsdfsfdfgsdfgsdfghsgsdgsdfgsdfgasgsdfgsdfgdfg'),
+(4, '<i class=\"bi bi-balloon-heart-fill\"></i>', 'Patlamayan Sistem', 'sfgsdfgsdfgsdfgsdfgsdfgdfgsdfgsdfgsdgsdfgsdfgsdfgsdfg'),
+(5, '<i class=\"bi bi-bootstrap-fill\"></i>', 'Responsive tasarım', 'asdfsdgfsdhjghkgjghkgfjkgfkhkh'),
+(6, '<i class=\"bi bi-behance\"></i>', 'DM\'den Yürü', 'hjghjjhfgjfdljacfjacsdvkasdjbvkı'),
+(7, '<i class=\"bi bi-bell-fill\"></i>', 'Jengal Bells', 'wefrwefjbıqwebfıhqwebchbuqwehcuwqebc');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `ozellikler2`
+--
+
+DROP TABLE IF EXISTS `ozellikler2`;
+CREATE TABLE IF NOT EXISTS `ozellikler2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` varchar(100) NOT NULL,
+  `altbaslik` varchar(150) NOT NULL,
+  `renk` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `ozellikler2`
+--
+
+INSERT INTO `ozellikler2` (`id`, `baslik`, `altbaslik`, `renk`) VALUES
+(1, 'Firmamızın Özellikleri', 'Fırmamınızın Siz Değerli Müşterilerine Sağladığı Avantajlar', '#f8f9fa');
 
 -- --------------------------------------------------------
 
