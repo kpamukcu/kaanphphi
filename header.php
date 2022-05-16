@@ -39,6 +39,9 @@ require_once('baglan.php');
                                 <li class="nav-item">
                                     <a class="nav-link" href="hakkimda.php">Hakkımda</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolyo.php">Portfolyo</a>
+                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
                                         Hizmetlerim

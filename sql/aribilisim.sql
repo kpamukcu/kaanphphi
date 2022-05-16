@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 13 May 2022, 18:21:49
+-- Üretim Zamanı: 16 May 2022, 18:28:05
 -- Sunucu sürümü: 5.7.36
 -- PHP Sürümü: 7.4.26
 
@@ -227,7 +227,7 @@ CREATE TABLE IF NOT EXISTS `mesajlar` (
 --
 
 INSERT INTO `mesajlar` (`id`, `ad`, `email`, `konu`, `mesaj`, `durum`) VALUES
-(1, 'Hayko Cepkin', 'hayko@hayko.com', 'Şikayet', 'Sevgili Kaan, sana o kadar para ödedim hala web sitemi yapmadın.', 'Okunmadı'),
+(1, 'Hayko Cepkin', 'hayko@hayko.com', 'Şikayet', 'Sevgili Kaan, sana o kadar para ödedim hala web sitemi yapmadın.', 'Okundu'),
 (2, 'Müzeyyen Senar', 'muzo@muzo.com', 'Teknik Destek', 'Kaancım, siteye mesajlar mail olarak bana gelmiyor. Bi zahmet kontrol eder misin?', 'Okundu'),
 (4, 'asfdasdfasd', 'kaan@kaan.com', 'Öneri', 'asdasdasdasdasda', 'Okunmadı');
 
@@ -384,6 +384,33 @@ INSERT INTO `paket3` (`id`, `baslik3`, `fiyat3`, `ozellik3a`, `ozellik3b`, `ozel
 -- --------------------------------------------------------
 
 --
+-- Tablo için tablo yapısı `portfolyo`
+--
+
+DROP TABLE IF EXISTS `portfolyo`;
+CREATE TABLE IF NOT EXISTS `portfolyo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` varchar(150) NOT NULL,
+  `fotoalt` varchar(150) NOT NULL,
+  `projeadi` varchar(150) NOT NULL,
+  `projeturu` varchar(150) NOT NULL,
+  `teknoloji` varchar(150) NOT NULL,
+  `tema` varchar(150) NOT NULL,
+  `konu` varchar(250) NOT NULL,
+  `kategori` varchar(150) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `portfolyo`
+--
+
+INSERT INTO `portfolyo` (`id`, `foto`, `fotoalt`, `projeadi`, `projeturu`, `teknoloji`, `tema`, `konu`, `kategori`) VALUES
+(1, '../img/foto (1).jpg', 'Acıbadem Beauty Center', 'Acıbadem Beauty Center', 'Kurumsal / Estetik', 'Wordpress, Elementor', 'Özel Tema', 'Yurtdışı sağlık turizmi için Acıbadem sağlık grubuna ait web sitesi.', 'Web Tasarım');
+
+-- --------------------------------------------------------
+
+--
 -- Tablo için tablo yapısı `sayfalar`
 --
 
@@ -506,7 +533,7 @@ CREATE TABLE IF NOT EXISTS `yorumlar` (
   `durum` varchar(15) NOT NULL,
   `tarih` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Tablo döküm verisi `yorumlar`
@@ -517,7 +544,8 @@ INSERT INTO `yorumlar` (`id`, `adiniz`, `soyadiniz`, `email`, `yorum`, `baslik`,
 (2, 'Bülent', 'Ersoy', 'bulo@gmail.com', 'Fevkaladenin Fevkinde', 'Seonun Web Siteleri için Önemi', 'onaylandı', '01.03.2022'),
 (4, 'Mahmut', 'Tuncer', 'mamo@gmail.com', 'Hadi Halay Çekelim :)', 'Blog Yazısı 6', 'onaylandı', '12.04.2022'),
 (5, 'Ebru', 'Polat', 'ebus@gmail.com', 'Aman Ne Kadar Da Güzel', 'Blog Yazısı 6', 'onaylandı', '25.12.2022'),
-(6, 'Haluk', 'Levent', 'halo@gmail.com', 'Hayko Sen Portakalda Vitaminken Ben Sahnelerdeydim', 'Sosyal Medyada Takipçi Kazanma', 'onaylandı', '18.04.2022');
+(6, 'Haluk', 'Levent', 'halo@gmail.com', 'Hayko Sen Portakalda Vitaminken Ben Sahnelerdeydim', 'Sosyal Medyada Takipçi Kazanma', 'onaylandı', '18.04.2022'),
+(7, 'Yıldız', 'Tilbe', 'yildo@gmail.com', 'Vay be Delikanlım benim, Güzel Elbiselerle Önünden Geçip Sana Bakmayacağım', 'Sosyal Medyada Takipçi Kazanma', 'onaylanmadı', '16.05.2022');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

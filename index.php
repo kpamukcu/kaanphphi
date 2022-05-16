@@ -103,15 +103,21 @@ $satir_hakkimda = $sorgu_hakkimda->fetch();
 <!-- Hakkımda Section End -->
 
 <!-- özellikler Section start -->
-<div id="anaOzellikler" class="py-5 bg-light">
+<?php
+$sorgu_ozellikbilgi = $db->prepare('select * from ozellikler2 order by id desc');
+$sorgu_ozellikbilgi->execute();
+$satir_ozellikbilgi = $sorgu_ozellikbilgi->fetch();
+?>
+<div id="anaOzellikler" class="py-5" style="background-color:<?php echo $satir_ozellikbilgi['renk']; ?>;">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h3>özelliklerimiz</h3>
-                <h2>Alt Başlık</h2>
+            <div class="col-12 text-center">
+                <h3><?php echo $satir_ozellikbilgi['baslik']; ?></h3>
+                <p><?php echo $satir_ozellikbilgi['altbaslik']; ?></p>
             </div>
         </div>
-        <div class="row">
+        <hr style="width:5%; border:2px solid #6c55f9;">
+        <div class="row">           
             <?php
 
             $sorgu_ozellik = $db->prepare('select * from ozellikler order by ozbaslik asc');
